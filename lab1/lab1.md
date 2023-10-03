@@ -3,6 +3,6 @@
 ### cd
 ![cd-without-argument](cd-without-argument.png)
 ### ls
-![ls-without-argument](ls-without-argument.png)
+![ls-without-argument](ls-no-argument.png)
 ### cat
-![cat-without-argument](cat-without-argument.png)
+![cat-without-argument](cat-no-argument.png)
