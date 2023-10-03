@@ -6,3 +6,5 @@
 ![ls-without-argument](ls-no-argument.png)
 ### cat
 ![cat-without-argument](cat-no-argument.png)
+
+## 2.Examples with a path to a file as an argument
