@@ -4,7 +4,7 @@
 ![cd-without-argument](cd-without-argument.png)  
 The working directory was in **~/lecture1**. I got that output because **cd** without an argument will take me to the home directory. **~** indicates that I am now in the home directory, so the output is not an error.  
 ### ls
-![ls-without-argument](ls-no-argument.png) 
+![ls-without-argument](ls-no-argument.png)  
 The working directory was in **~/lecture1**. I got that output because **ls** without an argument will output the contents of the working directory. It outputted Hello.class, Hello.java, messages, and README. Since those are the contents of **lecture1**, the output is not an error.  
 ### cat
 ![cat-without-argument](cat-no-argument.png)  
