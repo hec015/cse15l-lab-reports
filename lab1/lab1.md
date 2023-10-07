@@ -14,3 +14,11 @@
 ![ls-directory-argument](ls-directory-argument.png)
 ### cat
 ![cat-directory-argument](cat-directory-argument.png)
+
+## 3.Examples with a path to a file as an argument
+### cd
+![cd-file-argument](cd-file-argument.png)
+### ls
+![ls-file-argument](ls-file-argument.png)
+### cat
+![cat-file-argument](cat-file-argument.png)
