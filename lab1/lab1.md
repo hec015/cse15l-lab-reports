@@ -7,7 +7,7 @@ The working directory was in **/home/lecture1**. I got that output because **cd*
 ![ls-without-argument](ls-no-argument.png)  
 The working directory was in **/home/lecture1**. I got that output because **ls** without an argument will output the contents of the working directory. It outputted Hello.class, Hello.java, messages, and README. Since those are the contents of **lecture1**, the output is not an error.  
 ### cat
-![cat-without-argument](cat-no-argument.png)  
+![ls-without-argument](cat-no-argument.png)  
 The working directory was in **/home/lecture1**. The output was blank because **cat** without an argument will wait for me to type an input to echo until I press crtrl+d. The output is not an error.  
 
 ## 2. Examples with a path to a directory as an argument
