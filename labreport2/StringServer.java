@@ -4,11 +4,10 @@ import java.util.ArrayList
 
 class Handler implements URLHandler {
     ArrayList<String> messages = new ArrayList<String>();
-    int numStrings = 0;
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return String.format("Number: %d", num);
+            return formatMessageList(messages);
         } else {
             if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("=");
@@ -20,6 +19,12 @@ class Handler implements URLHandler {
             return "404 Not Found!";
         }
     }
+    public String formatMessageList (ArrayList<String> arrayList) {
+        String result = "";
+        for(int i = 0; i < arrayList.size(); i++) 
+            result += (i+1) + "." + arrayList.get(i) + "\n";    
+        return result;
+    }    
 }
 
 class NumberServer {
