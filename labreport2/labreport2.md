@@ -46,14 +46,14 @@ class StringServer {
 **Using /add-message**  
 ![add-message1](add-message1.png)  
 - When I used `/add-message?s=Hi`, the methods `handleRequest` and `formatMessageList` were called.  
-- The relevant argument for `handleRequest` is `URI url`, which would be `http://localhost:4030/add-message?s=Hi`, and the relevant values in it are `add-message`, `s`, and `Hi`. The relevant argument for `formatMessageList` an arrayList of strings, which would be the ArrayList `messages` that stores all of the messages, and the relevant value for it would be `Hi`.  
+- The relevant argument for `handleRequest` is `URI url`, which would be `http://localhost:4030/add-message?s=Hi`, and the relevant values in it are `add-message`, `s`, and `Hi`. The relevant argument for `formatMessageList` is an ArrayList of strings, which would be the ArrayList `messages` that stores all of the messages, and the relevant value for it would be `Hi`.  
 - This specific request changes the `messages` ArrayList because it adds `Hi` to it, and then `messages` is formatted by `formatMessageList` so that the messages will be listed. The request also changes the value in `parameters[1]` because `Hi` from url query is stored there.  
 
 
 **Using /add-message again**  
 ![add-message2](add-message2.png)  
 - When I used `/add-message?s=How are you`, the methods `handleRequest` and `formatMessageList` were called.  
-- The relevant argument for `handleRequest` is `URI url`, which would be `http://localhost:4030/add-message?s=How are you`, and the relevant values in it are `add-message`, `s`, and `How are you`. The relevant argument for `formatMessageList` an arrayList of strings, which would be the ArrayList `messages` that stores all of the messages, and the relevant value for it would be `How are you`.
+- The relevant argument for `handleRequest` is `URI url`, which would be `http://localhost:4030/add-message?s=How are you`, and the relevant values in it are `add-message`, `s`, and `How are you`. The relevant argument for `formatMessageList` is an ArrayList of strings, which would be the ArrayList `messages` that stores all of the messages, and the relevant value for it would be `How are you`.
 - This specific request changes the `messages` ArrayList because it adds `How are you` to it, and then `messages` is formatted by `formatMessageList` so that the messages will be listed. The request also changes the value in `parameters[1]` because `How are you` from the url query is stored there.
   
 ## Part 2  
