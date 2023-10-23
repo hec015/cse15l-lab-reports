@@ -13,7 +13,7 @@ class Handler implements URLHandler {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
                     messages.add(parameters[1]);
-                    return "Message added.";
+                    return formatMessageList(messages);
                 }
             }
             return "404 Not Found!";
