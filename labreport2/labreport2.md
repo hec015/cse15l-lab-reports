@@ -64,4 +64,4 @@ class StringServer {
 - Login without password
   ![terminal](ineg6-login.png) 
 ## Part 3  
-
+Something I learned in week 3 lab that I didn't know before is how I can use public and private keys so that I don't have to enter my password when I want to log in to ineg6. I didn't know that I could generate the keys with the command `ssh-gen` and that I could use the command `scp` to securely transfer the public key from my local device to my ineng6 account. Learning about this and having it set up will now make my life a bit easier now that I don't have to enter my long password each time I want to connect to ineg6. What I learned about remote connection and file transfer makes me wonder if I could benefit from setting this up with my PC at home so that I could transfer files from there to my laptop.
