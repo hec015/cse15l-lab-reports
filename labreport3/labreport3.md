@@ -50,7 +50,6 @@ I choose the look at four alternate command-line options of the command `less`. 
 
 ### One interesting command line option is `-p`.
 
-Example 1:  
 `$less -p "What If?" technical/911report/chapter-1.txt`
 
 ```
@@ -66,9 +65,9 @@ What If?
 
     Second, NEADS did not have accurate information on the location of United 93. Presumably FAA would have provided such information, but we do not know how long that would have taken, nor how long it would have taken NEADS to locate the target.
 ```
-
-Example 2:  
-`less -p "Conclusion" technical/biomed/1468-6708-3-1.txt`
+It jumps to the "What If" section of the first chapter of the report.  
+ 
+`less -p "Abbreviations" technical/biomed/1468-6708-3-1.txt`
 
 ```
 Abbreviations
@@ -82,10 +81,11 @@ Abbreviations
         YHL Years of healthy life
         YOL Years of life
 ```
+It jumps to the "Abbreviations" section of the paper.  
 
 `-p pattern` tells `less` to start at the first occurence of `pattern` in the file we want to look at. This is useful because if we want to find a certain section of a file, we won't have to manually look through the file to find it.  
 
-### An alternate way to use `less` is to have it look at multiple files.  
+### An alternate way to use `less` is to have it look at multiple files.   
 `less biomed/1468-6708-3-1.txt biomed/1468-6708-3-3.txt`
 It will show the contents of `biomed/1468-6708-3-1.txt` like it would if you just used `less biomed/1468-6708-3-1.txt`, but at the bottom, it displays
 ```
@@ -100,6 +100,60 @@ If we enter `:p`, it will go back to the previous file and again display at the 
 biomed/1468-6708-3-1.txt (file 1 of 2)
 ```
 This is useful because we may want to look at multiple files at a time, and tt also saves our position in a file if we decide to look at another file, which could be helpful.  
+
+### Setting bookmarks  
+`less biomed/1468-6708-3-1.txt`  
+I'm at line that reads "Body mass index" and want to bookmark it, so I enter `m`, and it displays   
+```
+set mark:
+```
+Then I enter `b` as the bookmark name.  
+Now I am somewhere else in the file 
+```
+Conclusion
+Recommendations for desirable weight have been...
+```
+I want to go back to my bookmark, so I enter `'`, and it displays
+```
+goto mark:
+```
+I enter 'b', and it brings me back to section that I had bookmarked.  
+```
+Body mass index
+BMI was calculated as measured weight in kilograms...
+```
+Now I want to bookmark the "Discussion" section of the paper, so I enter `m` and then `d` as the name, and whenever I press `'` and then `d`, it will bring me back to that section  
+```
+Discussion
+        
+  Optimal weight and overweight...
+```
+This is useful because we may want to bookmark certain lines or sections of file to go back to later, and using `m` and `'` allows us to save and go back to the parts of the file we marked and named.  
+
+### `+G` command-line option  
+`less +G 911report/chapter-1.txt`  
+```
+  The details of what happened on the morning of September 11 are complex, but they play out a simple theme. NORAD and the FAA were unprepared for the type of attacks launched against the United States on September 11, 2001. They struggled, under difficult circumstances, to improvise a homeland defense against an unprecedented challenge they had never before encountered and had never trained to meet.
+
+  At 10:02 that morning, an assistant to the mission crew commander at NORAD's Northeast Air Defense Sector in Rome, New York, was working with his colleagues on the floor of the command center. In a brief moment of reflection, he was recorded remarking that "This is a new type of war."
+
+  He was, and is, right. But the conflict did not begin on 9/11. It had been publicly declared years earlier, most notably in a declaration faxed early in 1998 to an Arabic-language newspaper in London. Few Americans had noticed it. The fax had been sent from thousands of miles away by the followers of a Saudi exile gathered in one of the most remote and impoverished countries on earth.
+```
+
+`less +G biomed/1458-6708-3-1.txt`  
+```
+Abbreviations
+BMI Body mass index
+CESD Center for Epidemiologic Studies Depression
+Scale
+CHS Cardiovascular Health Study
+EVGFP Is your health excellent, very good, good, fair or
+poor?
+QALY Quality-adjusted life years
+YHL Years of healthy life
+YOL Years of life
+```
+The `+G` command-line option tells `less` to start at the end of the file rather than the beginning. This is useful especially because we may want to go to the bottom of the file first and don't want to spend time scrolling all the way to the bottom, especially for a very long file.  
 
 
 
