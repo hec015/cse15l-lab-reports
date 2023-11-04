@@ -95,13 +95,13 @@ If we enter `:n`, `less` will display `biomed/1468-6708-3-3.txt`, and at the bot
 ```
 biomed/1468-6708-3-3.txt (file 2 of 2)
 ```  
-If we enter `:p`, it will go back to the previous file and again display at the bottom 
+If we enter `:p`, it will go back to the previous file and again display at the bottom. 
 ```
 biomed/1468-6708-3-1.txt (file 1 of 2)
 ```
 Another example,  
 `less 911report/chapter-1.txt 911report/chapter-2.txt 911report/chapter-3.txt`  
-and at the bottom it will show  
+and at the bottom it will show:  
 ```
 911report/chapter-1.txt (file 1 of 3)
 ```
