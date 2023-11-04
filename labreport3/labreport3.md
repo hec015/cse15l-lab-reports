@@ -86,7 +86,7 @@ It jumps to the "Abbreviations" section of the paper.
 `-p pattern` tells `less` to start at the first occurence of `pattern` in the file we want to look at. This is useful because if we want to find a certain section of a file, we won't have to manually look through the file to find it.  
 
 ### An alternate way to use `less` is to have it look at multiple files.   
-`less biomed/1468-6708-3-1.txt biomed/1468-6708-3-3.txt`
+`less biomed/1468-6708-3-1.txt biomed/1468-6708-3-3.txt`  
 It will show the contents of `biomed/1468-6708-3-1.txt` like it would if you just used `less biomed/1468-6708-3-1.txt`, but at the bottom, it displays
 ```
 biomed/1468-6708-3-1.txt (file 1 of 2)
@@ -99,7 +99,7 @@ If we enter `:p`, it will go back to the previous file and again display at the 
 ```
 biomed/1468-6708-3-1.txt (file 1 of 2)
 ```
-Another example,
+Another example,  
 `less 911report/chapter-1.txt 911report/chapter-2.txt 911report/chapter-3.txt`  
 and at the bottom it will show  
 ```
