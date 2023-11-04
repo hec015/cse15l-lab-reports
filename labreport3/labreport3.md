@@ -87,11 +87,11 @@ It jumps to the "Abbreviations" section of the paper.
 
 ### An alternate way to use `less` is to have it look at multiple files.   
 `less biomed/1468-6708-3-1.txt biomed/1468-6708-3-3.txt`  
-It will show the contents of `biomed/1468-6708-3-1.txt` like it would if you just used `less biomed/1468-6708-3-1.txt`, but at the bottom, it displays
+It will show the contents of `biomed/1468-6708-3-1.txt` like it would if you just used `less biomed/1468-6708-3-1.txt`, but at the bottom, it displays:
 ```
 biomed/1468-6708-3-1.txt (file 1 of 2)
 ```  
-If we enter `:n`, `less` will display `biomed/1468-6708-3-3.txt`, and at the bottom it will display 
+If we enter `:n`, `less` will display `biomed/1468-6708-3-3.txt`, and at the bottom it will display: 
 ```
 biomed/1468-6708-3-3.txt (file 2 of 2)
 ```  
@@ -110,7 +110,7 @@ This is useful because we may want to look at multiple files at a time, and tt a
 
 ### Setting bookmarks  
 `less biomed/1468-6708-3-1.txt`  
-I'm at line that reads "Body mass index" and want to bookmark it, so I enter `m`, and it displays   
+I'm at line that reads "Body mass index" and want to bookmark it, so I enter `m`, and it displays:   
 ```
 set mark:
 ```
