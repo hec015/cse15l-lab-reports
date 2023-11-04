@@ -106,7 +106,7 @@ and at the bottom it will show:
 911report/chapter-1.txt (file 1 of 3)
 ```
 
-This is useful because we may want to look at multiple files at a time, and tt also saves our position in a file if we decide to look at another file, which could be helpful.  
+This is useful because we may want to look at multiple files at a time, and it also saves our position in a file if we decide to look at another file, which could be helpful.  
 
 ### Setting bookmarks  
 `less biomed/1468-6708-3-1.txt`  
