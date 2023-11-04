@@ -48,8 +48,9 @@ In the old code, `arr[i]` wasn't stored for safekeeping, so `arr[arr.length - i 
 ## Part 2 - Researching Commands   
 I choose the look at four alternate command-line options of the command `less`. I used the information outputted from `man less` as reference.  
 
-One interesting command line option is `-p pattern`, which tells `less` to start at the first occurence of `pattern` in the file we want to look at. 
+### One interesting command line option is `-p`.
 
+Example 1:  
 `$less -p "What If?" technical/911report/chapter-1.txt`
 
 ```
@@ -65,3 +66,24 @@ What If?
 
     Second, NEADS did not have accurate information on the location of United 93. Presumably FAA would have provided such information, but we do not know how long that would have taken, nor how long it would have taken NEADS to locate the target.
 ```
+
+Example 2:  
+`less -p "Conclusion" technical/biomed/1468-6708-3-1.txt`
+
+```
+Abbreviations
+        BMI Body mass index
+        CESD Center for Epidemiologic Studies Depression
+        Scale
+        CHS Cardiovascular Health Study
+        EVGFP Is your health excellent, very good, good, fair or
+        poor?
+        QALY Quality-adjusted life years
+        YHL Years of healthy life
+        YOL Years of life
+```
+
+`-p pattern` tells `less` to start at the first occurence of `pattern` in the file we want to look at. This is useful because if we want to find a certain section of a file, we won't have to manually look through the file to find it.  
+
+
+      
