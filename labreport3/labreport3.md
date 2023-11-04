@@ -115,12 +115,12 @@ I'm at line that reads "Body mass index" and want to bookmark it, so I enter `m`
 set mark:
 ```
 Then I enter `b` as the bookmark name.  
-Now I am somewhere else in the file 
+Now I am somewhere else in the file. 
 ```
 Conclusion
 Recommendations for desirable weight have been...
 ```
-I want to go back to my bookmark, so I enter `'`, and it displays
+I want to go back to my bookmark, so I enter `'`, and it displays:
 ```
 goto mark:
 ```
@@ -129,7 +129,7 @@ I enter 'b', and it brings me back to section that I had bookmarked.
 Body mass index
 BMI was calculated as measured weight in kilograms...
 ```
-Now I want to bookmark the "Discussion" section of the paper, so I enter `m` and then `d` as the name, and whenever I press `'` and then `d`, it will bring me back to that section  
+Now I want to bookmark the "Discussion" section of the paper, so I enter `m` and then `d` as the name, and whenever I press `'` and then `d`, it will bring me back to that section.  
 ```
 Discussion
         
