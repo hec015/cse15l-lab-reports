@@ -19,7 +19,7 @@ I typed `cd lab7`, and pressed `<enter>`. Then I typed `bash t`, pressed `<tab>`
 
 ## Edit the code file to fix the failing test   
 I typed `vim L`, pressed `<tab>`, then pressed `.`, then pressed <tab> again to autocomplete it to `vim ListExamples.java`, and then pressed `<enter>`. 
-I then pressed `G`, `6`, `k`, `e`, `x`, `i`, `2`, `<esc>`, `:`, `w`, `q`, and `<enter>`.  
+I then pressed `G`, `6`, `k`, `e`, `x`, `i`, `2`, `<esc>`, `:`, `w`, `q`, and `<enter>`. 
 
 In Vim, `G` lets me jump to the last line, and `6` and `k` lets me go up 6 six lines to the line where I need to make the edit.  
 `e` goes to the end of the word, "index1", and `x` deletes the "1".   
