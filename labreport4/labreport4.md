@@ -10,7 +10,6 @@ I typed "git clone " and then pressed `<command>, v` to paste the SSH URL of my 
 
 ![clone](clone.png) 
 
-
 ## Run the tests, demonstrating that they fail  
 I typed "cd lab7", and pressed `<enter>`. Then I typed "bash t", pressed `<tab>` to autocomplete it to `bash test.sh`, and then pressed `<enter>` to run the test.    
 `<tab>` lets me type faster by making the shell complete what I want to type.  
