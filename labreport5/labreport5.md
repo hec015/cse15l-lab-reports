@@ -4,9 +4,9 @@
 ### Week 6 lab grading script not showing score  
 When I run `bash test.sh https://github.com/...`, I have trouble with getting it to show the score of student submissions that are able to compile but don't pass every test.   
 
-I have it so that the output of JUnit on `TestListExamples` is redirected to `junit-output.txt` in `grading-area`. I then use `grep "Tests run:" junit-output.txt` to get the line in JUnit that has the number of failures and store it in the variable `RESULT_LINE`. Then, I use `${RESULT_LINE:26}` to get the number of failures from the line and store that the variable `COUNT`. 
+I have it so that the output of JUnit on `TestListExamples` is redirected to `junit-output.txt` in `grading-area`. I then use `grep "Tests run:" junit-output.txt` to get the line in JUnit that has the number of failures and store it in the variable `RESULT_LINE`. Then, I use `${RESULT_LINE:26}` to get the number of failures from the line and store that in the variable `COUNT`. 
 
-`"Score: $COUNT/8"` should print the score, but it doesn't print the value of `$COUNT`.  
+`"Score: $COUNT/8"` should print the score, but it doesn't print the value of `COUNT`.  
 
 I think the bug has something to do with `${RESULT_LINE:26}`. This line should extract the number of failures from the last index of the string, which is 26, but it doesn't.  
 
@@ -18,7 +18,7 @@ I think the bug has something to do with `${RESULT_LINE:26}`. This line should e
 I suggest you try using `echo` on different indices.  
 
 ### Student Reply  
-Thank you! I did as you suggested and found that the index containing the number of failures was not in indec 26 as I had thought, but it was in index 25. Changing it to `${RESULT_LINE:26}` fixed the bug, and now the grading script correctly displays the score.  
+Thank you! I did as you suggested and found that the index containing the number of failures was not 26 as I had thought, but it was 25. Changing the line to `COUNT=${RESULT_LINE:26}` fixed the bug, and now the grading script correctly displays the score.  
 
 ![echo](echo.png)  
 ![correct](correct.png)  
