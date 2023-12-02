@@ -2,7 +2,7 @@
 
 ## EdStem Post: 
 ### Week 6 lab grading script not showing score  
-When I run `bash test.sh https://github.com/...` I'm having trouble with getting it to show the score of every student submission that is able to compile but doesn't pass every test.   
+When I run `bash test.sh https://github.com/...`, I have trouble with getting it to show the score of student submissions that are able to compile but don't pass every test.   
 
 I have it so that the output of JUnit on `TestListExamples` is redirected to `junit-output.txt` in `grading-area`. I then use `grep "Tests run:" junit-output.txt` to get the line in JUnit that has the number of failures and store it in the variable `RESULT_LINE`. Then, I use `${RESULT_LINE:26}` to get the number of failures from the line and store that the variable `COUNT`. 
 
