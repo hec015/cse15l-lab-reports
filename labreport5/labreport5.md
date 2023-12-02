@@ -18,7 +18,7 @@ I think the bug has something to do with `${RESULT_LINE:26}`. This line should e
 I suggest you try using `echo` on different indices.  
 
 ### Student Reply  
-Thank you! I did as you suggested and found that the index containing the number of failures was not 26 as I had thought, but it was 25. Changing the line to `COUNT=${RESULT_LINE:26}` fixed the bug, and now the grading script correctly displays the score.  
+Thank you! I did as you suggested and found that the index containing the number of failures was not 26 as I had thought, but it was 25. It appears that counted the indices starting at 1 instead of 0. Changing the line to `COUNT=${RESULT_LINE:26}` fixed the bug, and now the grading script correctly displays the score.  
 
 ![echo](echo.png)  
 ![correct](correct.png)  
